@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register | Engineering College</title>
+<meta name="description" content="Register as a prospective student at Engineering College.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<a class="visually-hidden-focusable skip-link" href="#main">Skip to main content</a>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark site-nav" aria-label="Main navigation">
+<div class="container">
+<a class="navbar-brand" href="index.html">Engineering College</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li><li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li><li class="nav-item"><a class="nav-link" href="student-life.html">Student Life</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li><li class="nav-item"><a class="nav-link active" href="registration.html" aria-current="page">Register</a></li></ul></div>
+</div>
+</nav>
+<main id="main">
+<header class="page-head"><div class="container"><h1>Register as a prospective student</h1><p class="lead">Take the first step toward your engineering career. Our admissions team will contact you.</p></div></header>
+<section class="section"><div class="container"><div class="row"><div class="col-lg-8">
+<div id="regAlert" role="alert" tabindex="-1"></div>
+<form id="regForm" novalidate>
+<div class="row g-3">
+<div class="col-12"><label for="rName" class="form-label">Full name</label><input type="text" class="form-control" id="rName" required autocomplete="name"><div class="invalid-feedback">Please enter your full name.</div></div>
+<div class="col-md-6"><label for="rEmail" class="form-label">Email</label><input type="email" class="form-control" id="rEmail" required autocomplete="email"><div class="invalid-feedback">Please enter a valid email address.</div></div>
+<div class="col-md-6"><label for="rPhone" class="form-label">Phone</label><input type="tel" class="form-control" id="rPhone" required autocomplete="tel" aria-describedby="phoneHelp"><div id="phoneHelp" class="form-text">9 to 15 digits. You may include + and spaces.</div><div class="invalid-feedback">Phone number must contain 9 to 15 digits.</div></div>
+<div class="col-md-6"><label for="rProgram" class="form-label">Desired program</label><select class="form-select" id="rProgram" required><option value="">Select a program</option><option>Software Engineering</option><option>Computer Science</option><option>Electrical Engineering</option><option>Mechanical Engineering</option><option>Civil Engineering</option><option>Architecture &amp; Design</option></select><div class="invalid-feedback">Please select a program.</div></div>
+<div class="col-md-6"><label for="rIntake" class="form-label">Intended intake</label><input type="date" class="form-control" id="rIntake" required><div class="invalid-feedback">Please choose a future intake date.</div></div>
+<fieldset class="col-12"><legend class="form-label fs-6">Study mode</legend>
+<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="mode" id="m1" value="Full-time" required><label class="form-check-label" for="m1">Full-time</label></div>
+<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="mode" id="m2" value="Part-time"><label class="form-check-label" for="m2">Part-time</label></div>
+<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="mode" id="m3" value="Online"><label class="form-check-label" for="m3">Online</label></div>
+<div class="invalid-feedback d-block" id="modeErr" hidden>Please choose a study mode.</div></fieldset>
+<div class="col-md-6"><label for="rPass" class="form-label">Password</label><input type="password" class="form-control" id="rPass" required minlength="8" autocomplete="new-password" aria-describedby="passHelp"><div id="passHelp" class="form-text">At least 8 characters, including a number.</div><div class="invalid-feedback">Password must be at least 8 characters with a number.</div></div>
+<div class="col-md-6"><label for="rPass2" class="form-label">Confirm password</label><input type="password" class="form-control" id="rPass2" required autocomplete="new-password"><div class="invalid-feedback">Passwords do not match.</div></div>
+<div class="col-12"><label for="rRef" class="form-label">How did you hear about us? (optional)</label><select class="form-select" id="rRef"><option value="">Choose one</option><option>Friend or family</option><option>Social media</option><option>School visit</option><option>Other</option></select></div>
+<div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="rTerms" required><label class="form-check-label" for="rTerms">I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</label><div class="invalid-feedback">You must accept the terms to continue.</div></div></div>
+<div class="col-12"><button type="submit" class="btn btn-accent btn-lg">Register</button></div>
+</div></form></div></div></div></section>
+</main>
+<footer class="site-footer py-5">
+<div class="container">
+<div class="row g-4">
+<div class="col-md-6"><p class="h5 mb-2">Engineering College</p><p class="mb-0">Build the future, one idea at a time.</p></div>
+<div class="col-md-6"><address class="mb-2">12 Innovation Avenue, Bishkek, Kyrgyzstan<br><a href="mailto:info@engineeringcollege.edu">info@engineeringcollege.edu</a><br><a href="tel:+996312000000">+996 312 000 000</a></address>
+<p class="small mb-0">&copy; 2026 Engineering College. All rights reserved.</p></div>
+</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

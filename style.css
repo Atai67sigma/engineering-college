@@ -1,0 +1,35 @@
+
+:root{--navy:#12263f;--blue:#1f5fbf;--orange:#e8590c;--orange-dark:#c2410c;--paper:#f6f7f9;--ink:#1c2633;--s:1rem}
+body{font-family:"Source Serif 4",Georgia,serif;color:var(--ink);padding-top:64px;line-height:1.65;font-size:1.0625rem}
+h1,h2,h3,h4,h5,.navbar-brand,.btn,.nav-link,legend,.form-label,.badge,summary,th{font-family:Archivo,system-ui,sans-serif}
+h1,h2,h3{font-weight:800;letter-spacing:-.01em;color:var(--navy)}
+a{color:var(--blue)}
+.skip-link{position:absolute;z-index:2000;background:#fff;padding:.5rem 1rem}
+.site-nav{background:var(--navy);min-height:64px}
+.navbar-brand{font-weight:800;letter-spacing:.01em}
+.nav-link{font-weight:600}
+.nav-link.active{color:#fff!important;box-shadow:inset 0 -3px 0 var(--orange)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.hero{background:var(--navy);color:#fff;padding:5rem 0;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:32px 32px}
+.hero h1{color:#fff;font-size:clamp(2.25rem,6vw,4rem)}
+.tagline{font-family:Archivo,sans-serif;font-size:clamp(1.25rem,3vw,1.75rem);font-weight:600;color:#ffb27d}
+.hero .lead{max-width:36rem;margin-bottom:2rem}
+.page-head{background:var(--navy);color:#fff;padding:3rem 0}
+.page-head h1{color:#fff}
+.page-head .lead{max-width:40rem;margin:0}
+.section{padding:3.5rem 0}
+.section.alt{background:var(--paper)}
+.measure{max-width:44rem}
+.btn-accent{background:var(--orange-dark);border-color:var(--orange-dark);color:#fff;font-weight:600}
+.btn-accent:hover,.btn-accent:focus{background:#9a3412;border-color:#9a3412;color:#fff}
+.card{border:1px solid #d9dee5;border-top:4px solid var(--blue);border-radius:.25rem;box-shadow:none}
+.stats .num{font-family:Archivo,sans-serif;font-weight:800;font-size:2.5rem;color:var(--blue);margin:0}
+.stats dt{font-weight:400}
+.faq-item{border-bottom:1px solid #d9dee5;padding:.75rem 0}
+.faq-item summary{cursor:pointer;font-weight:600}
+.faq-item p{margin:.5rem 0 0}
+.site-footer{background:var(--navy);color:#d7dee8}
+.site-footer a{color:#fff}
+.hp{position:absolute;left:-9999px}
+.btn-outline-primary{--bs-btn-color:#1f5fbf}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
